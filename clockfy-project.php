@@ -90,9 +90,12 @@ foreach($dados->timeEntries as $timeEntrie){
 
                     $dataProject = [
                         "_links"=> [
-                        "workPackage"=> [
-                            "href"=> "/api/v3/work_packages/$workPackage"
-                        ]
+                            "workPackage"=> [
+                                "href"=> "/api/v3/work_packages/$workPackage"
+                            ],
+                            "activity"=> [
+                                "href"=> "/api/v3/time_entries/activities/3"
+                            ]
                         ],
                         "hours"=> $timeEntrie->timeInterval->duration,
                         "comment"=> ltrim(substr($timeEntrie->description,strrpos($timeEntrie->description, $workPackage) + strlen($workPackage) + 1, 255)),
