@@ -92,9 +92,6 @@ foreach($dados->timeEntries as $timeEntrie){
                         "_links"=> [
                             "workPackage"=> [
                                 "href"=> "/api/v3/work_packages/$workPackage"
-                            ],
-                            "activity"=> [
-                                "href"=> "/api/v3/time_entries/activities/3"
                             ]
                         ],
                         "hours"=> $timeEntrie->timeInterval->duration,
