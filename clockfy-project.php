@@ -1,9 +1,9 @@
 <?php
-if(!is_file('.env')){
+if(!is_file(__DIR__.'.env')){
     die();
 }
 
-$conf = json_decode(file_get_contents('.env'));
+$conf = json_decode(file_get_contents(__DIR__.'.env'));
 
 
 
