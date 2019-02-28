@@ -148,4 +148,4 @@ file_put_contents(
     $fileApont,
     serialize($apontamentos)
 );
-file_put_contents('.env',json_encode($conf, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+file_put_contents(__DIR__.'/.env',json_encode($conf, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
