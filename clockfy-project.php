@@ -56,7 +56,7 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTPHEADER => array(
     "Content-Type: application/json",
     "Postman-Token: 8343e20a-ffd2-48a2-bb67-a1d0cfeaa7d2",
-    "X-Api-Key: XAedB7B5hyPg/ubo",
+    "X-Api-Key: ". $conf->clockFyAPIKey,
     "cache-control: no-cache"
   ),
 ));
